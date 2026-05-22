@@ -32,6 +32,10 @@ conda create -n rapids-25.12-python-3.13 -c rapidsai -c conda-forge \
     cudf=25.12 cuml=25.12 python=3.13 'cuda-version>=13.0,<=13.1' \
     dash jupyterlab
 ```
+Activate Conda Environment
+```bash
+conda activate rapids-25.12-python-3.13
+```
 Execute on the Terminal
 ```bash
 ./run_app.sh

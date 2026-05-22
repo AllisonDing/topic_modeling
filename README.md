@@ -13,7 +13,7 @@ caches to disk. Subsequent refits only run the GPU-accelerated
 | File | Purpose |
 |---|---|
 | [topic_modeling_app.py](topic_modeling_app.py) | Streamlit app |
-| [run_app.sh](run_app.sh) | Launcher pinned to the `rapids-25.10` conda env |
+| [run_app.sh](run_app.sh) | Launcher pinned to the `rapids-25.10-python-3.13` conda env |
 | `Electronics.jsonl.gz` | McAuley Lab Amazon Electronics reviews (download separately, see notebook) |
 | `.cache/` | Auto-created. Holds `preprocessed_texts_{n}.pkl` + `embeddings_{n}.npy` per sample size |
 
@@ -26,7 +26,13 @@ caches to disk. Subsequent refits only run the GPU-accelerated
   notebook)
 
 ## Run
-
+Install Conda Environment
+```bash
+conda create -n rapids-25.12-python-3.13 -c rapidsai -c conda-forge \
+    cudf=25.12 cuml=25.12 python=3.13 'cuda-version>=13.0,<=13.1' \
+    dash jupyterlab
+```
+Execute on the Terminal
 ```bash
 ./run_app.sh
 # open http://localhost:8501

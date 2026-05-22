@@ -1,7 +1,7 @@
 # GPU BERTopic — interactive hyperparameter explorer
 
 Streamlit UI on top of the [video_notebook_for_GPU_Accelerated_BERTopic_DGX_Station_40M.ipynb](video_notebook_for_GPU_Accelerated_BERTopic_DGX_Station_40M.ipynb)
-pipeline. Lets you tweak UMAP + HDBSCAN hyperparameters in the sidebar and
+pipeline lets you tweak UMAP + HDBSCAN hyperparameters in the sidebar and
 refresh every BERTopic visualization without re-embedding.
 
 The expensive step — encoding reviews with `all-MiniLM-L6-v2` — runs once and
